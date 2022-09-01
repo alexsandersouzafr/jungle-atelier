@@ -23,3 +23,5 @@ export const footer = [
     ],
   },
 ];
+
+export const copyright = "@2022 by JUNGLE";

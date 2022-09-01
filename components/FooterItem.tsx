@@ -8,8 +8,8 @@ interface Props {
 export default function FooterItem({ title, children }: Props) {
   return (
     <div className="text-right">
-      <div className="font-bold py-8">{title}</div>
-      <div className="leading-relaxed">{children}</div>
+      <div className="font-medium py-8">{title}</div>
+      <div className="leading-relaxed text-black">{children}</div>
     </div>
   );
 }
