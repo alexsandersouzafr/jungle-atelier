@@ -18,6 +18,7 @@ const IndexPage = () => (
             Delicado, romântico e moderno. Para noivas que buscam leveza com
             detalhes em renda. Ideal para casamentos ao ar livre.
           </div>
+          <div>Lugar do Texto</div>
         </div>
       </div>
     </Container>
