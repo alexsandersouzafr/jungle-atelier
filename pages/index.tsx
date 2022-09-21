@@ -29,6 +29,7 @@ const IndexPage = () => (
           const { name, image, recommendation, collection } = dress;
           return (
             <DressDisplay
+              key={name}
               name={name}
               image={image}
               recommendation={recommendation}
