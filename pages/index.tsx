@@ -1,7 +1,9 @@
 import BigPicture from "../components/BigPicture";
 import Display from "../components/Display";
+import { DressDisplay } from "../components/DressDisplay";
 import Layout from "../components/Layout";
 import { Container } from "../utils/core";
+import { dresses } from "../utils/settings";
 
 const IndexPage = () => (
   <Layout title="Atelier Sonho Impossível">
@@ -18,12 +20,44 @@ const IndexPage = () => (
             Delicado, romântico e moderno. Para noivas que buscam leveza com
             detalhes em renda. Ideal para casamentos ao ar livre.
           </div>
-          <div>Lugar do Texto</div>
         </div>
       </div>
     </Container>
+    <Container>
+      <div className="flex gap-16 justify-center py-32">
+        {dresses.map((dress) => {
+          const { name, image, recommendation, collection } = dress;
+          return (
+            <DressDisplay
+              name={name}
+              image={image}
+              recommendation={recommendation}
+              collection={collection}
+            />
+          );
+        })}
+      </div>
+    </Container>
     <BigPicture />
-    <Container>INFERNO</Container>
+    <Container>
+      <div className="py-8">
+        <div className="text-4xl text-center text-black  py-16">
+          Fale com o Atelier e encontre o seu vestido.
+        </div>
+        <div className="text-center p-4">
+          Se inscreva para novidades e pormoções.
+        </div>
+        <div className="justify-center flex">
+          <input
+            placeholder="seu email"
+            className="bg-light-gray text-black rounded-tl-3xl rounded-bl-3xl py-4 px-8"
+          ></input>
+          <button className="py-4 px-8 light-gray rounded-tr-3xl rounded-br-3xl bg-gray-500 ">
+            Enviar
+          </button>
+        </div>
+      </div>
+    </Container>
   </Layout>
 );
 

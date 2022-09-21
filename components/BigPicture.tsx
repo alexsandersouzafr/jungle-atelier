@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Container } from "../utils/core";
 
-import noiva2 from "../img/noiva2.jpg";
+import noiva2 from "/img/noiva2.jpg";
 
 export default function BigPicture() {
   return (

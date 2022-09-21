@@ -25,3 +25,24 @@ export const footer = [
 ];
 
 export const copyright = "@2022 by JUNGLE";
+
+export const dresses = [
+  {
+    name: "Marina",
+    image: "/img/Marina.png",
+    recommendation: "Para clássicas",
+    collection: "Coleção Elementos",
+  },
+  {
+    name: "Pandora",
+    image: "/img/Pandora.png",
+    recommendation: "Para clássicas",
+    collection: "Coleção Elementos",
+  },
+  {
+    name: "Aura",
+    image: "/img/Aura.png",
+    recommendation: "Para clássicas",
+    collection: "Coleção Elementos",
+  },
+];
