@@ -15,7 +15,7 @@ export function Navbar() {
   return (
     <div className="flex gap-8 py-4">
       {buttons.map((button) => (
-        <NavButton>{button}</NavButton>
+        <NavButton key={Math.random()}>{button}</NavButton>
       ))}
     </div>
   );
